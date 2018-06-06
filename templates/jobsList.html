@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+	login Page
+{% endblock %}
+
+{%  block body %}
+	Hello {{ name }}!
+	<a href="{{ url_for('test') }}">See test...</a>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+	<h1 align="center">Welcome to personality Predictor</h1>
+{% endblock %}
+
+{%  block body %}
+	<div id="container">
+		<form action="{{ url_for('jobsList') }}" method="post">
+			<table cellspacing="3" cellpadding="3" align="center">
+				<tr>
+					<td><label>Username</label></td>
+					<td><input type="text" name="user_name" placeholder="Enter your username"/></td>
+				</tr>
+				<tr>
+					<td><label>Password</label></td>
+					<td><input type="text" name="password" placeholder="Enter your password"/></td>
+				</tr>
+				<tr><td colspan="2" align="center"><input type="submit" value="Login"></input></td></tr>
+				<tr><td colspan="2" align="center"><label>Forgot password?</label></td></tr>
+			</table>
+		</form>
+	</div>
+	<a href="{{ url_for('adminSignUp') }}">See adminSignUp...</a>
+	<a href="{{ url_for('studentSignUp') }}">See studentSignUp...</a>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+	<h1 align="center">Student SignUp</h1>
+{% endblock %}
+
+{%  block body %}
+	<div id="container">
+		<form action="{{ url_for('studentProfile') }}" method="post">
+			<table cellspacing="3" cellpadding="3" align="center">
+				<tr>
+					<td><label>Name:</label></td>
+					<td><input type="text" name="student_name" placeholder="Enter your name"/></td>
+				</tr>
+				<tr>
+					<td><label>Gender:</label></td>
+					<td><input type="text" name="gender" placeholder="Enter your gender"/></td>
+				</tr>
+				<tr>
+					<td><label>Pan No:</label></td>
+					<td><input type="text" name="pan_no" placeholder="Enter your Pan No."/></td>
+				</tr>
+				<tr>
+					<td><label>Password:</label></td>
+					<td><input type="text" name="password" placeholder="Enter your password"/></td>
+				</tr>
+				<tr>
+					<td><label>Confirm Password:</label></td>
+					<td><input type="text" name="cnf_password" placeholder="Re-type your password"/></td>
+				</tr>
+				<tr><td colspan="2" align="center"><input type="submit" value="Submit"></input></td></tr>
+			</table>
+		</form>
+	</div>
+{% endblock %}
