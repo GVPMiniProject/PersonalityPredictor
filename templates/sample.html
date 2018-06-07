@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html><title>gjgd</title>
+<body>
+<form action="adminsignup" method="post">
+			<table cellspacing="3" cellpadding="3" align="center">
+				<tr>
+					<td><label>Name:</label></td>
+					<td><input type="text" name="student_name" placeholder="Enter your name"/></td>
+				</tr>
+				<tr>
+					<td><label>Work Experience: </label></td>
+					<td><input type="radio" name="work_experience" value="yes"/>YES</td>
+					<td><input type="radio" name="work_experience" value="no"/>NO</td>
+				</tr>
+				<tr>
+					<td><label>Tools:</label></td>
+					<td><textarea rows="5" cols="20" placeholder="Tools Known"></textarea></td>
+				</tr>
+				<tr>
+					<td><label>Aggregate: </label></td>
+					<td><input type="text" name="aggregate" placeholder="Enter your aggregate"/></td>
+				</tr>
+				<tr>
+					<td><label>References: </label></td>
+					<td><input type="text" name="references" placeholder="Enter your references"/></td>
+				</tr>
+				<tr>
+				<td><label for="resume">Photo:</label></td>
+                <td><input type="file" id="photo" ></td>
+				</tr>
+				<tr>
+                <td>
+                    <label for="languages">Languages</label>
+                </td>
+                <td>
+                    <select id="languages" name="languages">
+                        <option disabled selected>--Choose Languages--</option>
+                        <optgroup label="languages">
+                            <option>java</option>
+                            <option>C</option>
+                            <option>python</option>
+                            <option>PHP</option>
+							<option>R</option>
+                            <option>Perl</option>
+                            <option>C++</option>
+                            <option>javascript</option>
+                        </optgroup>
+                        <optgroup label="Others">
+                            <option>adobetools</option>
+                            <option>autocad</option>
+                            <option>cyberlink</option>
+                            <option>GIMP</option>
+							<option>android</option>
+                            <option>QCAD</option>
+                           
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+		    <tr>
+                <td>
+                    <label for="Education">Education</label>
+                </td>
+                <td>
+                    <select id="Education" name="education">
+                        <option disabled selected>--choose education--</option>
+                        <optgroup label="Education">
+                            <option>B.Tech</option>
+                            <option>B.Ed</option>
+                            <option>B.E</option>
+                            <option>M.Tech</option>
+							<option>B.Sc</option>
+                            <option>M.Sc</option>
+                            </optgroup>
+					</select>
+				</td>			
+			</tr>
+				<tr><td colspan="2" align="center"><input type="submit" value="Submit"></input></td></tr>
+			
+			</table>
+		</form>
+	</body>
+	</html>
