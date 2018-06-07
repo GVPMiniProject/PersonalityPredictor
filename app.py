@@ -17,7 +17,7 @@ def adminSignUp():
 def studentProfile():
 	return render_template("studentProfile.html")
 	
-@app.route("/jobProfile")
+@app.route("/jobProfile", methods = ["POST"])
 def jobProfile():
 	return render_template("jobProfile.html")
 	
@@ -27,8 +27,7 @@ def editJobProfile():
 	
 @app.route("/jobsList", methods = ["POST"])
 def jobsList():
-	userName = request.form.get("user_name")
-	return render_template("jobsList.html", name = userName)
+	return render_template("jobsList.html")
 	
 @app.route("/test")
 def test():
