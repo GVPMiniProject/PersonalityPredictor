@@ -5,5 +5,51 @@
 {% endblock %}
 
 {%  block body %}
-	<a href="{{ url_for('editJobProfile') }}">See editJobProfile...</a>
+        <div id="container">
+	<form action="{{ url_for('editJobProfile') }}" method="post">
+			<table cellspacing="3" cellpadding="3" align="center">
+				<tr>
+					<td><label>Company Name:</label></td>
+					<td><input type="text" name="company_name" placeholder="Enter company name"/></td>
+				</tr>
+				<tr>
+					<td><label>Description: </label></td>
+					<td><textarea rows="5" cols="20" placeholder="Description"></textarea></td>
+				</tr>
+				<tr>
+					<td><label>Test required: </label></td>
+					<td><input type="radio" name="test_required" value="yes"/>YES</td>
+					<td><input type="radio" name="test_required" value="no"/>NO</td>
+				</tr>
+				<tr>
+					<td><label>Job Availability status: </label></td>
+					<td><input type="radio" name="availablity_status" value="yes"/>YES</td>
+					<td><input type="radio" name="availablity_status" value="no"/>NO</td>
+				</tr>
+				<tr>
+					<td><label>Job Nature: </label></td>
+					<td><input type="radio" name="job nature" value="work from home"/>work from home</td>
+					<td><input type="radio" name="job nature" value="Full Timw"/>Full Time</td>
+				</tr>
+				<tr>
+					<td><label>Training: </label></td>
+					<td><input type="radio" name="Training" value="should be given"/>should be given</td>
+					<td><input type="radio" name="Training" value="Not Needed"/>Not Needed</td>
+				</tr>
+				<tr>
+				<td><label>Skills required in preferred order</label></td>
+				<td><ol>
+				<li>Java</li>
+				<li>C</li>
+				<li>Python</li>
+				<li>C++</li>
+				<li>sql</li>
+				<li>Ruby</li>
+				<li>PHP</li></ol>
+				</td></tr>
+				<tr><td colspan="2" align="center"><input type="submit" value="Submit"></input></td></tr>
+			
+			</table>
+		</form>
+<         /div>
 {% endblock %}
