@@ -5,33 +5,7 @@
 {% endblock %}
 
 {%  block body %}
-<<<<<<< HEAD
-	<div id="container">
-		<form action="{{ url_for('jobsList') }}" method="post">
-			<table cellspacing="3" cellpadding="3" align="center">
-				<tr>
-					<td><label>Name:</label></td>
-					<td><input type="text" name="student_name" placeholder="Enter your name"/></td>
-				</tr>
-				<tr>
-					<td><label>Age</label></td>
-					<td><input type="text" name="age" placeholder="Enter your age"/></td>
-				</tr>
-				<tr>
-					<td><label>Gender</label></td>
-					<td><input type="text" name="gender" placeholder="Enter your gender"/></td>
-				</tr>
-				<tr><td colspan="2" align="center"><input type="submit" value="Update Profile"></input></td></tr>
-			</table>
-		</form>
-	</div>
-{% endblock %}
-||||||| merged common ancestors
-	<a href="{{ url_for('jobsList') }}">See jobsList...</a>
-{% endblock %}
-=======
-        <div id="container>
-	<form action="{{ url_for('studentProfile') }}" method="post">
+	<form action="jobsList" method="post">
 			<table cellspacing="3" cellpadding="3" align="center">
 				<tr>
 					<td><label>Name:</label></td>
@@ -80,14 +54,14 @@
                             <option>autocad</option>
                             <option>cyberlink</option>
                             <option>GIMP</option>
-			    <option>android</option>
+							<option>android</option>
                             <option>QCAD</option>
                            
                         </optgroup>
                     </select>
                 </td>
             </tr>
-	<tr>
+		    <tr>
                 <td>
                     <label for="Education">Education</label>
                 </td>
@@ -99,16 +73,14 @@
                             <option>B.Ed</option>
                             <option>B.E</option>
                             <option>M.Tech</option>
-			   <option>B.Sc</option>
+							<option>B.Sc</option>
                             <option>M.Sc</option>
                             </optgroup>
-			/select>
-		</td>			
-	</tr>
+					</select>
+				</td>			
+			</tr>
 				<tr><td colspan="2" align="center"><input type="submit" value="Submit"></input></td></tr>
 			
 			</table>
-		</form>
-</div>
+	</form>
 {% endblock %}
->>>>>>> 9b8492e34fb8a0c3c16497f0941c0ee6eb5ff355

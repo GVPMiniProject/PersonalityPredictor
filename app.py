@@ -21,9 +21,9 @@ def studentProfile():
 def jobProfile():
 	return render_template("jobProfile.html")
 	
-@app.route("/editJobProfile")
-def editJobProfile():
-	return render_template("editJobProfile.html")
+@app.route("/applicantList", methods = ["POST"])
+def applicantList():
+	return render_template("applicantList.html")
 	
 @app.route("/jobsList", methods = ["POST"])
 def jobsList():
