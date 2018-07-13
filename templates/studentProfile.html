@@ -5,7 +5,7 @@
 {% endblock %}
 
 {%  block body %}
-	<form action="jobsList" method="post">
+	<form action="{{ url_for('studentJobsList') }}" method="post">
 			<table cellspacing="3" cellpadding="3" align="center">
 				<tr>
 					<td><label>Name:</label></td>

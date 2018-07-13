@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 
 {% block heading %}
-	<h1 align="center">Student SignUp</h1>
+	<h1 align="center">SignUp</h1>
 {% endblock %}
 
-{%  block body %}
+{% block body %}
 	<div id="container">
-		<form action="{{ url_for('studentProfile') }}" method="post">
+		<form action="{{ url_for('jobProfile') }}" method="post">
 			<table cellspacing="3" cellpadding="3" align="center">
 				<tr>
 					<td><label>Username:</label></td>
@@ -20,8 +20,17 @@
 					<td><label>Confirm Password:</label></td>
 					<td><input type="text" name="cnf_password" placeholder="Re-type your password"/></td>
 				</tr>
+				<tr>
+					<td><label>Tell us who you want to be:</label></td>
+					<td><input type="radio" name="p" value="Admin" required>Admin</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="radio" name="p" value="Student" required>Student</td>
+				</tr>
 				<tr><td colspan="2" align="center"><input type="submit" value="Submit"></input></td></tr>
 			</table>
 		</form>
+		    <p align="center">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 	</div>
 {% endblock %}

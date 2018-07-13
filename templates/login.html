@@ -10,17 +10,23 @@
 			<table cellspacing="3" cellpadding="3" align="center">
 				<tr>
 					<td><label>Username</label></td>
-					<td><input type="text" name="user_name" placeholder="Enter your username"/></td>
+					<td><input type="text" name="user1" placeholder="Enter your username"/></td>
 				</tr>
 				<tr>
 					<td><label>Password</label></td>
-					<td><input type="text" name="password" placeholder="Enter your password"/></td>
+					<td><input type="password" name="password1" placeholder="Enter your password"/></td>
+				</tr>
+				<tr>
+					<td><label>Tell us who you are:</label></td>
+					<td><input type="radio" name="r" value="Admin" required>Admin</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="radio" name="r" value="Student" required>Student</td>
 				</tr>
 				<tr><td colspan="2" align="center"><input type="submit" value="Login"></input></td></tr>
-				<tr><td colspan="2" align="center"><label>Forgot password?</label></td></tr>
+				<tr><td colspan="2" align="center"><label>Forgot password?</label><p>||</p><a href="{{ url_for('signUp') }}">SignUp?</a></td></tr>
 			</table>
 		</form>
 	</div>
-	<a href="{{ url_for('adminSignUp') }}">See adminSignUp...</a>
-	<a href="{{ url_for('studentSignUp') }}">See studentSignUp...</a>
 {% endblock %}

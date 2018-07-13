@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+	<h1 align="center">Intructions</h1>
+{% endblock %}
+		
+{% block body %}
+	<form action="{{ url_for('test') }}" method="post">
+		<p><h2> Before beginning the exam: </h2>
+		<font color="red">
+		<ol><i>
+		<li>Make sure you have a good internet connection.
+		<li>Shutdown all other qapplications as they can conflict with the web interface.
+		<li>Use the latest versions of Google Chrome, Mozilla FireFox or Microsoft Edge.
+		<li>Maximize your browser window before starting the test. 
+		<li>Minimizing the browser window during the exam can prevent the submission of your exam.
+		</li>
+		</i>
+		</ol>
+		</font>
+		<br>
+
+		<h2> During the exam: </h2>
+		<ol><i>
+		<font color="red">
+		<li>Don't minimise the browser during the test.
+		<li>Don't click the back button or reload button on your browser. This will take you out of the test.
+		</li>
+		</font>
+		</i>
+		</ol>
+		<br>
+		<h2> Instructions for the Exam: </h2>
+		<ol><i>
+		<font color="red">
+		<li>Answer all the questions.
+		<li>Follow the above rules carefully.
+		<li>The exam can be only attempted once.
+		<li>Click Submit button to submit and to evaluate the results.
+		</li>
+		</font>
+		</i>
+		</ol>
+		</p>
+		<div style="text-align:center">  
+		<input type="submit" value="Submit" />  
+		</div>  
+	</form>
+{% endblock %}

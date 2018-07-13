@@ -5,7 +5,7 @@
 {% endblock %}
 
 {%  block body %}
-	<form action="adminsignup" method="post">
+	<form action="{{ url_for('applicantList') }}" method="post">
 			<table cellspacing="3" cellpadding="3" align="center">
 				<tr>
 					<td><label>Company Name:</label></td>
